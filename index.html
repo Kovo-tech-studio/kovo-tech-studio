@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Kovo.Tech.Studio</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <script src="moj.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        
+    </head>
+    <!-- profesor meni nece conectad javascripta pa sem dal tu za zacetek  bom popravil -->
+    <script>
+    var countDownDate = new Date("May 30, 2020 18:40:59").getTime();
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  
+  document.getElementById("ura").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+ 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("ura").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
+
+
+    <body>
+        <!-- hover -->
+        <div-hover>
+            <a href="index.html"><img src="logo.png" height="20%" width="12%"></a>
+        </div-hover>
+        <!-- main menu -->
+        <div class="navbar">
+            <a class="active" href= index.html><img src="buildings.png" height="24px" width="24px"></a>
+            <a href="Projects.html">Projects</a>
+            <a href=Credits.html>Credits</a>
+            <a href=Galery.html>Galery</a>
+            <a href=Aboutus.html> About us</a>
+            <a href=Joinus.html>Join us</a>
+          </div>
+        <!-- pic slider -->
+        <!-- pi1 Photo by Juan Gomez on Unsplash -->
+        <!-- pi2  Photo by Helloquence on Unsplash-->
+        <!-- pi3  Photo by Marvin Meyer on Unsplash-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="slider1.png" alt="Los Angeles" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h3>Kovo-Tech-Studio</h3>
+                  <p>We are a development studio!</p>
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img src="slider2.png" alt="Chicago" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h3>We provide</h3>
+                  <p>Fun, good expression with our games.</p>
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img src="slider3.png" alt="New York" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h3>We wish you</h3>
+                  <p>to have a lot of fun</p>
+                </div>   
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+
+        <!-- video -->
+        <center>
+            <h1>&#9758; Introduction video &#9756;</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7mDoofMp8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br>
+        </center>
+        <!-- clock scene -->
+        <div-clock>
+            <h1><b>New game is comming soon!</b></h1>
+            <img src ="game.gif" height="50%" width="40%">
+            <br>
+            <p-clock  Id="ura"></p-clock>
+        </div-clock>
+        <!-- COMMUNITY border -->
+        <div-community>
+            <h1>COMMUNITY</h1>
+            <br>
+            <center>
+            <p><b>For more information about your games and news do not forget <br>to check our youtube channel and discord server</b></p>
+            <br>
+            <img src="arrow.gif" height="10%" width="10%">
+            <br>
+            <div class="navbar">
+                <a class="active" href= index.html><img src="youtube.png" height="24px" width="24px"></a>
+                <a href="Falling-Box.html"><img src ="discord.png"height="24px" width="24px"></a>
+                <a href="https://gamejolt.com/@kovo-tech-studio"><img src ="gamejolt.png"height="24px" width="24px"></a>
+                <a href="https://www.instagram.com/kovo.tech.studio/"><img src ="instagram.png"height="24px" width="24px"></a>
+                <a href="https://www.facebook.com/anze.kovac.33/"><img src="fb.png"height="24px" width="24px"></a>
+              </div>
+            </center>
+            
+        </div-community>
+        <!-- software border -->
+        <div-software>
+            <h1>SOFTWARE</h1>
+            <br>
+            <p>The Our Projects prototypes is being developed for Android and Ios using the following software:</p>
+            
+            <br>
+
+            <a href="https://www.youtube.com/channel/UCoX7hfkDPWmegPt6hrnjeAg"><img src="unity.png"height="20%" width="20%"></a>
+            <a href="https://discord.gg/zPFe8c"><img src ="blender.png"height="15%" width="30%"></a>
+        </div-software>
+        <!-- end border -->
+        <div-end><p>All rights reserved Kovo-Tech-Studios 2020.</p></div-end>
+
+    </body>
+</html>
