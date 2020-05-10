@@ -363,3 +363,9 @@ h2-1{
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
+table, th, td {
+  border: 1px solid black;
+  background-image: linear-gradient(#333333,#000000);
+  color: #ffffff;
+  text-align: center;
+}
